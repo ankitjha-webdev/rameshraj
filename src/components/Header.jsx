@@ -1,74 +1,72 @@
-import React from 'react'
-
+import { Link } from "react-router-dom"
 const Header = () => {
   return (
-    <div className="h-64 dark:text-slate-200">
+    <div className="dark:text-slate-200">
   <header className="container mx-auto flex w-full items-center justify-between py-4 px-6">
-    <a href="#">
+    <Link to="/">
       <div className="w-full text-center text-lg font-bold sm:w-fit sm:text-left">
-        <span className="text-cyan-500">Tailwind</span>
-        <span className="dark:text-slate-100">Snippets</span>
+        <span className="text-blue-600">Ramesh </span>
+        <span className="dark:text-slate-100"> Raj </span>
       </div>
-    </a>
+    </Link>
     <nav className="hidden bg-white text-base dark:bg-slate-900 sm:block">
       <ul className="flex items-center space-x-2">
         <li className="group relative">
-          <a
+          <Link
             className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="/"
+            to="/"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li className="group relative">
-          <a
+          <Link
             className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="#"
+            to="#"
           >
             Services
-          </a>
+          </Link>
           <ul className="invisible absolute z-30 space-y-2 rounded-lg border border-slate-50 bg-white p-4 opacity-0 shadow-xl transition-opacity delay-75 ease-in-out group-hover:visible group-hover:opacity-100 dark:border-slate-800 dark:bg-slate-900">
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/web-development"
+                to="/services/web-development"
               >
                 Web development
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/digital-marketing"
+                to="/services/digital-marketing"
               >
                 Digital marketing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/brand-strategy"
+                to="/services/brand-strategy"
               >
                 Brand strategy
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
         <li className="group relative">
-          <a
+          <Link
             className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="/about"
+            to="/about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="group relative">
-          <a
+          <Link
             className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-900 no-underline transition hover:text-slate-900 dark:text-slate-50 dark:hover:text-slate-50"
-            href="/contact"
-          >
+            to="/contact">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
@@ -114,73 +112,66 @@ const Header = () => {
           </button>
         </li>
         <li className="group relative w-full overflow-x-visible text-right">
-          <a
+          <Link
             className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="/"
+            to="/"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li className="group relative w-full overflow-x-visible text-right">
-          <a
+          <Link
             className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="#"
+            to="/"
           >
             Services
-          </a>
+          </Link>
           <ul className="h-0 space-y-2 overflow-y-hidden bg-slate-50 px-4 py-0 transition-all delay-75 ease-in-out group-hover:h-full group-hover:py-4 dark:bg-slate-800">
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/web-development"
+                to="/services/web-development"
               >
                 Web development
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/digital-marketing"
+                to="/services/digital-marketing"
               >
                 Digital marketing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                href="/services/brand-strategy"
+                to="/services/brand-strategy"
               >
                 Brand strategy
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
         <li className="group relative w-full overflow-x-visible text-right">
-          <a
+          <Link
             className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-            href="/about"
+            to="/about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="group relative w-full overflow-x-visible text-right">
-          <a
+          <Link
             className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-900 no-underline transition hover:text-slate-900 dark:text-slate-50 dark:hover:text-slate-50"
-            href="/contact"
+            to="/contact"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
   </header>
-  <p className="container mx-auto px-6 py-8">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id varius
-    turpis. Nullam ut tincidunt tellus. Nunc fermentum odio vitae turpis
-    fermentum vulputate. Morbi vel malesuada felis. Fusce vestibulum nibh id
-    erat volutpat ullamcorper vitae sed neque. Curabitur vel lobortis metus, at
-    mollis turpis.
-  </p>
 </div>
   )
 }

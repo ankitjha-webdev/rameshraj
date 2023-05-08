@@ -1,13 +1,12 @@
 import React from 'react'
 import Header from './components/Header'
+import { AppRouter } from './routes/AppRouter'
 
 const App = () => {
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <Header/>
+      <Header/>
+      <AppRouter/>
     </>
   )
 }
