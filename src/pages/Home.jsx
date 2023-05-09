@@ -1,49 +1,213 @@
 import { PrevWork } from "../components/PrevWork"
 import { About } from "./About"
+// import profile from '../assets/images/profile.jpg'
 import profile from '../assets/images/profile.png'
+import { SocialButton } from "../components/SocialButton"
 import { Link } from "react-router-dom"
 
 export const Home = () => {
   return (
     <>
-    <section className="container mx-auto flex flex-col px-8 py-28 sm:flex-row-reverse sm:px-12">
-    <img
-      alt="Woman doing meditation"
-      className="mb-8 w-full dark:contrast-200 sm:mb-0 sm:ml-4 sm:w-1/2"
-      src={profile}
-    />
-  <div className="mr-4 w-full text-center sm:w-1/2 sm:text-left">
-    <h1 className="mb-4 text-3xl font-bold leading-tight dark:text-dark-50 md:text-4xl">
-    {/* A humble Poltician with his porfession, */}
-    {/* Poltician, Snake Rescuer */}
+       <div className="max-w-max mx-auto">
+       <section
+        class="container mx-auto flex flex-col items-center px-8 py-36 sm:flex-row-reverse sm:px-12"
+      >
+        <div class="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
+          <img
+            alt="Hanging out with friends"
+            class="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px]"
+            src={profile}
+          />
+        </div>
+        <div class="mr-4 w-full text-center sm:w-1/2 sm:text-left">
+          <h1
+            className="mb-6 text-3xl font-bold leading-tight dark:text-slate-50 md:text-4xl"
+          >
+            {/* Hangout, work or just relax? Got it! */}
+            {/* A Multifaceted Leader Advocating for Social Welfare and Wildlife Conservation */}
+            A Leader for Social Welfare <br/> &amp; Wildlife Conservation
+            {/* A Trailblazing Leader Fostering Social <br/> Welfare and Protecting Wildlife */}
+          </h1>
+          {/* <h1
+      class="mb-4 text-3xl font-bold leading-tight dark:text-dark-50 md:text-4xl"
+    >
+      Train your mind,
       <br />
-    {/* and Snake Rescuer */}
-    </h1>
-    <p className="mb-8 leading-relaxed text-slate-700 dark:text-slate-400">
-      Ramesh Raj is a poltician and Snake Rescuer. He is also a member of AAP Party and a Social worker.
-    </p>
-      <Link to="https://www.facebook.com/rameshraj.aap" target="_blank">
-      <button className="rounded-lg border-0 bg-blue-400 px-6 py-2 mx-2 text-base text-white shadow-lg shadow-blue-300 transition     hover:bg-blue-500 hover:shadow-blue-400 dark:shadow-blue-900">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg>
-      </button>
-      </Link>
-      <Link to="https://twitter.com/snake_rescue" target="_blank">
-      <button className="rounded-lg border-0 bg-blue-400 px-6 py-2 text-base text-white shadow-lg shadow-blue-300 transition     hover:bg-blue-500 hover:shadow-blue-400 dark:shadow-blue-900">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/> </svg>
-      </button>
-      </Link>
-      <Link to="https://www.youtube.com/@snakerescuemuz" target="_blank">
-      <button className="rounded-lg border-0 bg-blue-400 px-6 py-2 mx-2 text-base text-white shadow-lg shadow-blue-300 transition     hover:bg-blue-500 hover:shadow-blue-400 dark:shadow-blue-900">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/> </svg>
-      </button>
-      </Link>
-      {/* <button className="rounded-lg border-0 bg-blue-400 px-6 py-2 text-base text-white shadow-lg shadow-blue-300 transition     hover:bg-blue-500 hover:shadow-blue-400 dark:shadow-blue-900">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </svg>
-      </button> */}
-  </div>
-</section>
-<About/>
-<PrevWork/>
+      be peaceful
+    </h1> */}
+          <p class="mb-2 leading-relaxed text-slate-700 dark:text-slate-400">
+            {/* We provide indoor &amp; outdoor space with delighted yet affordable foods
+            &amp; beverages. */}
+            Prominent figure in politics, advocating 
+            social welfare and wildlife 
+            conservation with exceptional dedication.
+          </p>
+          <ul
+            class="mb-8 flex flex-col items-center space-y-1 dark:text-slate-400 sm:items-start"
+          >
+            <li class="flex items-end">
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1.2em"
+                height="1.2em"
+                class="mr-2 text-blue-300"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 12l5 5L20 7"
+                ></path>
+              </svg>
+              <span>Provide employment for all. 
+                {/* Various types of coffee beans */}
+                </span>
+            </li>
+            <li class="flex items-end">
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1.2em"
+                height="1.2em"
+                class="mr-2 text-blue-300"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 12l5 5L20 7"
+                ></path>
+              </svg>
+              <span>
+              Weekly public court
+                {/* Coworking area */}
+                </span>
+            </li>
+            <li class="flex items-end">
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1.2em"
+                height="1.2em"
+                class="mr-2 text-blue-300"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 12l5 5L20 7"
+                ></path>
+              </svg>
+              <span>
+              Resolve public obstacles within 7 days.
+                {/* Meeting room */}
+                </span>
+            </li>
+            <li class="flex items-end">
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1.2em"
+                height="1.2em"
+                class="mr-2 text-blue-300"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m5 12l5 5L20 7"
+                ></path>
+              </svg>
+              <span>
+              Free electricity (up to 300 units).
+                {/* Meeting room */}
+                </span>
+            </li>
+          </ul>
+          {/* <div class="flex flex-col space-y-3 md:flex-row md:space-x-2 md:space-y-0">
+            <button
+              class="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
+            >
+              Open menu
+            </button>
+            <button
+              class="rounded-lg border-0 bg-white px-6 py-3 text-base text-slate-900 shadow-lg shadow-slate-100 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-slate-700 dark:text-slate-300 dark:shadow-sm dark:shadow-slate-800 dark:hover:bg-slate-600 sm:py-2"
+            >
+              Explore services
+            </button>
+          </div> */}
+          <SocialButton/>
+        </div>
+      </section>
+      {/* <About profile={profile}/> */}
+      <section className="container mx-auto flex flex-col items-center px-12 py-28 sm:flex-row sm:px-12">
+        <div className="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
+          <img
+            alt="Profile"
+            className="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px]"
+            src={profile}
+          />
+        </div>
+          {/* <img
+            alt="Profile"
+            className="mb-10 h-24 w-full pr-16 pl-16 dark:contrast-200 dark:invert sm:mb-0 sm:h-fit sm:w-1/2 sm:pr-24 sm:pl-0"
+            src={profile}
+          /> */}
+          <div className="mr-4 w-full text-center sm:w-1/2 sm:text-left">
+            <h2 className="mb-4 text-3xl font-bold leading-tight dark:text-slate-50 md:text-4xl">
+              About Me
+            </h2>
+            <p className="leading-relaxed text-slate-700 dark:text-slate-400">
+              Ramesh Raj is a distinguished political strategist,
+              esteemed consultant, and accomplished author.
+              {/* He embarked on his professional journey as a social media
+              activist in the year 2011, subsequently assuming a pivotal
+              role in leading the social media and IT division
+              of the 'Aam Aadmi Party' (AAP). */}
+            </p>
+            <p className="leading-relaxed text-slate-700 mt-3 dark:text-slate-400">
+              He embarked on his professional journey as a social media
+              activist in the year 2011, <br/>
+              subsequently assuming a pivotal
+              role in <br/> leading the social media and IT division
+              of the 'Aam Aadmi Party' (AAP).
+            </p>
+            <SocialButton/> <br />
+            <Link
+              className="group relative mx-auto mt-8 inline-block font-semibold text-slate-900 underline decoration-blue-300 decoration-2 underline-offset-8 transition hover:decoration-slate-700 dark:text-slate-200 dark:hover:decoration-slate-200 sm:mx-0"
+              to="about"
+            >
+              Know work!
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1.2em"
+                height="1.2em"
+                className="absolute bottom-0 -right-6 scale-x-0 transition group-hover:scale-x-100"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 12h14m-4 4l4-4m-4-4l4 4"
+                />
+              </svg>
+            </Link>
+          </div>
+        </section>
+      <PrevWork/>
+       </div>
     </>
   )
 }
