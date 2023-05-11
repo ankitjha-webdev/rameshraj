@@ -174,7 +174,7 @@ export const Home = () => {
               role in leading the social media and IT division
               of the 'Aam Aadmi Party' (AAP). */}
             </p>
-            <p className="leading-relaxed text-slate-700 mt-3 dark:text-slate-400">
+            <p className="leading-relaxed text-slate-700 mt-3 mb-4 dark:text-slate-400">
               He embarked on his professional journey as a social media
               activist in the year 2011, <br/>
               subsequently assuming a pivotal

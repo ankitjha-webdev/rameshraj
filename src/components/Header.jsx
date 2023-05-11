@@ -26,7 +26,7 @@ const Header = () => {
           >
             Services
           </Link>
-          <ul className="invisible absolute z-30 space-y-2 rounded-lg border border-slate-50 bg-white p-4 opacity-0 shadow-xl transition-opacity delay-75 ease-in-out group-hover:visible group-hover:opacity-100 dark:border-slate-800 dark:bg-slate-900">
+          {/* <ul className="invisible absolute z-30 space-y-2 rounded-lg border border-slate-50 bg-white p-4 opacity-0 shadow-xl transition-opacity delay-75 ease-in-out group-hover:visible group-hover:opacity-100 dark:border-slate-800 dark:bg-slate-900">
             <li>
               <Link
                 className="undefined block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
@@ -51,7 +51,15 @@ const Header = () => {
                 Brand strategy
               </Link>
             </li>
-          </ul>
+          </ul> */}
+        </li>
+        <li className="group relative">
+          <Link
+            className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+            to="/memories"
+          >
+            Memories
+          </Link>
         </li>
         <li className="group relative">
           <Link

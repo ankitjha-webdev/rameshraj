@@ -1,6 +1,9 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import img1 from '../assets/images/FB_IMG_1681748689273.jpg'
+import img2 from '../assets/images/FB_IMG_1681805114007.jpg'
+import img3 from '../assets/images/FB_IMG_1683385245976.jpg'
 export const PrevWork = () => {
+    const [images, setImages] = useState();
   return (
     <>
     {/* <section className="container mx-auto px-12 py-28">
@@ -136,7 +139,7 @@ export const PrevWork = () => {
   </h1>
   <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
     <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
-      <svg
+      {/* <svg
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
         width="1.2em"
@@ -153,12 +156,13 @@ export const PrevWork = () => {
           <path d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0" />
           <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
         </g>
-      </svg>
+      </svg> */}
+      <img src={img1} alt={img1}/>
       <div className="mt-3 text-sm font-semibold">Working space</div>
     </div>
 
     <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
-      <svg
+      {/* <svg
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
         width="1.2em"
@@ -175,12 +179,13 @@ export const PrevWork = () => {
           <path d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0" />
           <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
         </g>
-      </svg>
+      </svg> */}
+       <img src={img2} alt={img2}/>
       <div className="mt-3 text-sm font-semibold">Affordable price</div>
     </div>
 
     <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
-      <svg
+      {/* <svg
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
         width="1.2em"
@@ -197,7 +202,8 @@ export const PrevWork = () => {
           <path d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0" />
           <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
         </g>
-      </svg>
+      </svg> */}
+       <img src={img3} alt={img3} className='w-full sm:w-48'/>
       <div className="mt-3 text-sm font-semibold">High speed internet</div>
     </div>
 
