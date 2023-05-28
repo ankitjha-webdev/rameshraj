@@ -1,9 +1,11 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { Home } from '../pages/Home'
 import { About } from '../pages/About'
 import { Contact } from '../pages/Contact'
-import { Gallery } from '../pages/Gallery'
+import { Memories } from '../components/Memories'
+import { Notfound } from '../pages/error/notfound/notfound'
+import { Internalerror } from '../pages/error/servererror/internalerror'
+
 export const AppRouter = () => {
   return (
     <>
@@ -11,7 +13,10 @@ export const AppRouter = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
-            <Route path='/gallery' element={<Gallery/>}></Route>
+            <Route path='/memories' element={<Memories/>}></Route>
+            <Route path='/internalerror' element={<Internalerror/>}></Route>
+            <Route path='/notfound' element={<Notfound/>}></Route>
+            <Route path='*' element={<Navigate to={'/notfound'} />}></Route>
         </Routes>
     </>
   )

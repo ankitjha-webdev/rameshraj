@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
-import img1 from '../assets/images/FB_IMG_1681748689273.jpg'
-import img2 from '../assets/images/FB_IMG_1681805114007.jpg'
-import img3 from '../assets/images/FB_IMG_1683385245976.jpg'
+// import React, { useState } from 'react'
+import img1 from '../assets/images/IMG_20230506_205240.jpg'
+import img2 from '../assets/images/IMG_20230506_102511.jpg'
+import img3 from '../assets/images/FB_IMG_1683385390938.jpg'
+import img4 from '../assets/images/IMG_20230506_205606.jpg'
+import img5 from '../assets/images/IMG_20230506_205503.jpg'
+import img6 from '../assets/images/IMG_20230506_205424.jpg'
+import { Link } from 'react-router-dom'
 export const PrevWork = () => {
-    const [images, setImages] = useState();
+    // const [images, setImages] = useState();
   return (
     <>
     {/* <section className="container mx-auto px-12 py-28">
@@ -133,12 +137,13 @@ export const PrevWork = () => {
     </div>
   </div>
 </section> */}
-<section className="container mx-auto px-8 py-28 sm:px-12">
+<section className="animate-fade-down container mx-auto px-8 py-28 sm:px-12 justify-center items-center">
+
   <h1 className="sm:mb-18 mb-24 w-full text-center text-4xl font-bold dark:text-slate-50 sm:mx-auto sm:w-4/5">
-    Conturibtion 
+  Work Summary 
   </h1>
   <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-    <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
       {/* <svg
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
@@ -157,57 +162,33 @@ export const PrevWork = () => {
           <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
         </g>
       </svg> */}
-      <img src={img1} alt={img1}/>
-      <div className="mt-3 text-sm font-semibold">Working space</div>
+      <img src={img1} alt={img1} className='rounded '/>
+      {/* <div className="mt-3 text-sm font-semibold">Working space</div> */}
     </div>
 
-    <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
-      {/* <svg
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1.2em"
-        height="1.2em"
-        className="h-8 w-8"
-      >
-        <g
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        >
-          <path d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0" />
-          <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
-        </g>
-      </svg> */}
-       <img src={img2} alt={img2}/>
-      <div className="mt-3 text-sm font-semibold">Affordable price</div>
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+       <img src={img2} alt={img2}  className='rounded ' />
+      {/* <div className="mt-3 text-sm font-semibold">Affordable price</div> */}
+    </div>
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+       <img src={img3} alt={img3}  className='rounded ' />
+      {/* <div className="mt-3 text-sm font-semibold">Affordable price</div> */}
     </div>
 
-    <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
-      {/* <svg
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1.2em"
-        height="1.2em"
-        className="h-8 w-8"
-      >
-        <g
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        >
-          <path d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0" />
-          <path d="M3.515 9.515c4.686-4.687 12.284-4.687 17 0" />
-        </g>
-      </svg> */}
-       <img src={img3} alt={img3} className='w-full sm:w-48'/>
-      <div className="mt-3 text-sm font-semibold">High speed internet</div>
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+       <img src={img4} alt={img4} className=' rounded' />
+      {/* <div className="mt-3 text-sm font-semibold">High speed internet</div> */}
+    </div>
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+       <img src={img5} alt={img5} className=' rounded' />
+      {/* <div className="mt-3 text-sm font-semibold">High speed internet</div> */}
+    </div>
+    <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+       <img src={img6} alt={img6} className=' rounded' />
+      {/* <div className="mt-3 text-sm font-semibold">High speed internet</div> */}
     </div>
 
-    <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
+    {/* <div className="flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
       <svg
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
@@ -269,11 +250,16 @@ export const PrevWork = () => {
         </g>
       </svg>
       <div className="mt-3 text-sm font-semibold">Huge parking lot</div>
-    </div>
+    </div> */}
     
   </div>
-</section>
 
+<Link to="/memories" target="_blank" className='sm:mx-auto flex flex-col items-center justify-center'>
+      <button className="rounded-lg border-0 mx-2 mt-8 bg-blue-400 px-6 py-2  text-base text-white shadow-lg shadow-blue-300 transition     hover:bg-blue-500 hover:shadow-blue-400 dark:shadow-blue-900">
+        View More
+      </button>
+      </Link>
+</section>
     </>
   )
 }

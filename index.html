@@ -2,12 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/profile.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+    async
+    src="https://cdn.ampproject.org/amp-story-player-v0.js"
+  ></script>
+  <link
+    href="https://cdn.ampproject.org/amp-story-player-v0.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4806WZRXLF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4806WZRXLF');
+</script>
     <title>Ramesh Raj</title>
   </head>
   <body>
     <div id="root"></div>
+    <script type="application/json">
+      {
+        "behavior": {
+          "autoplay": true
+        }
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

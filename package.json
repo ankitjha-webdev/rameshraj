@@ -1,18 +1,36 @@
 {
   "name": "rameshraj",
   "private": true,
+  "homepage": "https://rameshraj.in/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
+  },
+  "author": {
+    "name": "Ankit Kumar",
+    "email": "contact@ankitkumar.tech",
+    "url": "https://ankitkumar.tech/",
+    "github": "ankitjha-webdev",
+    "linkedin": "ankitkumarcse"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "formik": "^2.2.9",
+    "gh-pages": "^5.0.0",
+    "nodemailer": "^6.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1"
+    "react-error-boundary": "^4.0.4",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.11.1",
+    "react-transition-group": "^4.4.5",
+    "yarn": "^1.22.19",
+    "yup": "^1.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -25,6 +43,7 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
+    "tailwindcss-animated": "^1.0.1",
     "vite": "^4.3.5"
   }
 }

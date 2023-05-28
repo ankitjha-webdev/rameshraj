@@ -1,0 +1,11 @@
+/* header {
+    height: 8vh;
+    color: #545454;
+    background-color: #DDB556;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  amp-story-player {
+    margin: 1rem auto;
+  }

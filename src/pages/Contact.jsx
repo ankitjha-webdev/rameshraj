@@ -1,7 +1,8 @@
-import React from 'react'
-
+import { Contact as ContactComp } from "../components/Contact"
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <ContactComp/>
+    </>
   )
 }

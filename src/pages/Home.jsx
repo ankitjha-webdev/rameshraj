@@ -1,25 +1,28 @@
 import { PrevWork } from "../components/PrevWork"
-import { About } from "./About"
-// import profile from '../assets/images/profile.jpg'
 import profile from '../assets/images/profile.png'
 import { SocialButton } from "../components/SocialButton"
-import { Link } from "react-router-dom"
-
+import { Contact } from "../components/Contact"
+import { Support } from "../components/Support"
+import { LatestNotify } from "../components/notification/LatestNotify"
+// import { WebStory } from "../components/stories/WebStory"
 export const Home = () => {
   return (
     <>
-       <div className="max-w-max mx-auto">
+       <div className="max-w-7xl mx-auto">
+       {/* <div style="width: 100%; position: relative; max-width: 500px;"><div style="padding-top: 166%;"><iframe src="https://story.ankitkumar.tech/ankit-story" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div> */}
+      {/* <WebStory/> */}
        <section
-        class="container mx-auto flex flex-col items-center px-8 py-36 sm:flex-row-reverse sm:px-12"
-      >
-        <div class="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
+        className="container mx-auto flex flex-col items-center px-8 py-8 sm:flex-row-reverse sm:px-12"
+        >
+        <LatestNotify/>
+        <div className="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
           <img
             alt="Hanging out with friends"
-            class="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px]"
+            className="rounded-lg sm:rounded-br-[80px] sm:rounded-tl-[120px] animate-fade-left"
             src={profile}
           />
         </div>
-        <div class="mr-4 w-full text-center sm:w-1/2 sm:text-left">
+        <div className="mr-4 w-full text-center sm:w-1/2 sm:text-left animate-fade-right">
           <h1
             className="mb-6 text-3xl font-bold leading-tight dark:text-slate-50 md:text-4xl"
           >
@@ -29,13 +32,13 @@ export const Home = () => {
             {/* A Trailblazing Leader Fostering Social <br/> Welfare and Protecting Wildlife */}
           </h1>
           {/* <h1
-      class="mb-4 text-3xl font-bold leading-tight dark:text-dark-50 md:text-4xl"
+      className="mb-4 text-3xl font-bold leading-tight dark:text-dark-50 md:text-4xl"
     >
       Train your mind,
       <br />
       be peaceful
     </h1> */}
-          <p class="mb-2 leading-relaxed text-slate-700 dark:text-slate-400">
+          <p className="mb-2 leading-relaxed text-slate-700 dark:text-slate-400">
             {/* We provide indoor &amp; outdoor space with delighted yet affordable foods
             &amp; beverages. */}
             Prominent figure in politics, advocating 
@@ -43,22 +46,22 @@ export const Home = () => {
             conservation with exceptional dedication.
           </p>
           <ul
-            class="mb-8 flex flex-col items-center space-y-1 dark:text-slate-400 sm:items-start"
+            className="mb-8 flex flex-col items-center space-y-1 dark:text-slate-400 sm:items-start"
           >
-            <li class="flex items-end">
+            <li className="flex items-end">
               <svg
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24"
                 width="1.2em"
                 height="1.2em"
-                class="mr-2 text-blue-300"
+                className="mr-2 text-blue-300"
               >
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m5 12l5 5L20 7"
                 ></path>
               </svg>
@@ -66,20 +69,20 @@ export const Home = () => {
                 {/* Various types of coffee beans */}
                 </span>
             </li>
-            <li class="flex items-end">
+            <li className="flex items-end">
               <svg
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24"
                 width="1.2em"
                 height="1.2em"
-                class="mr-2 text-blue-300"
+                className="mr-2 text-blue-300"
               >
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m5 12l5 5L20 7"
                 ></path>
               </svg>
@@ -88,20 +91,20 @@ export const Home = () => {
                 {/* Coworking area */}
                 </span>
             </li>
-            <li class="flex items-end">
+            <li className="flex items-end">
               <svg
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24"
                 width="1.2em"
                 height="1.2em"
-                class="mr-2 text-blue-300"
+                className="mr-2 text-blue-300"
               >
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m5 12l5 5L20 7"
                 ></path>
               </svg>
@@ -110,20 +113,20 @@ export const Home = () => {
                 {/* Meeting room */}
                 </span>
             </li>
-            <li class="flex items-end">
+            <li className="flex items-end">
               <svg
                 preserveAspectRatio="xMidYMid meet"
                 viewBox="0 0 24 24"
                 width="1.2em"
                 height="1.2em"
-                class="mr-2 text-blue-300"
+                className="mr-2 text-blue-300"
               >
                 <path
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m5 12l5 5L20 7"
                 ></path>
               </svg>
@@ -132,24 +135,28 @@ export const Home = () => {
                 {/* Meeting room */}
                 </span>
             </li>
+            
           </ul>
-          {/* <div class="flex flex-col space-y-3 md:flex-row md:space-x-2 md:space-y-0">
+          {/* <div className="flex flex-col space-y-3 md:flex-row md:space-x-2 md:space-y-0">
             <button
-              class="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
+              className="rounded-lg border-0 bg-slate-900 px-6 py-3 text-base text-white shadow-lg shadow-slate-300 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-orange-300 dark:text-black dark:shadow-sm dark:shadow-orange-300 dark:hover:bg-orange-400 sm:py-2"
             >
               Open menu
             </button>
             <button
-              class="rounded-lg border-0 bg-white px-6 py-3 text-base text-slate-900 shadow-lg shadow-slate-100 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-slate-700 dark:text-slate-300 dark:shadow-sm dark:shadow-slate-800 dark:hover:bg-slate-600 sm:py-2"
+              className="rounded-lg border-0 bg-white px-6 py-3 text-base text-slate-900 shadow-lg shadow-slate-100 transition hover:bg-orange-300 hover:text-slate-900 hover:shadow-orange-300 dark:bg-slate-700 dark:text-slate-300 dark:shadow-sm dark:shadow-slate-800 dark:hover:bg-slate-600 sm:py-2"
             >
               Explore services
             </button>
           </div> */}
+          
           <SocialButton/>
+          
         </div>
       </section>
+      
       {/* <About profile={profile}/> */}
-      <section className="container mx-auto flex flex-col items-center px-12 py-28 sm:flex-row sm:px-12">
+      {/* <section className="container mx-auto flex flex-col items-center px-12 py-28 sm:flex-row sm:px-12">
         <div className="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
           <img
             alt="Profile"
@@ -157,11 +164,11 @@ export const Home = () => {
             src={profile}
           />
         </div>
-          {/* <img
+          <img
             alt="Profile"
             className="mb-10 h-24 w-full pr-16 pl-16 dark:contrast-200 dark:invert sm:mb-0 sm:h-fit sm:w-1/2 sm:pr-24 sm:pl-0"
             src={profile}
-          /> */}
+          />
           <div className="mr-4 w-full text-center sm:w-1/2 sm:text-left">
             <h2 className="mb-4 text-3xl font-bold leading-tight dark:text-slate-50 md:text-4xl">
               About Me
@@ -169,17 +176,17 @@ export const Home = () => {
             <p className="leading-relaxed text-slate-700 dark:text-slate-400">
               Ramesh Raj is a distinguished political strategist,
               esteemed consultant, and accomplished author.
-              {/* He embarked on his professional journey as a social media
+              He embarked on his professional journey as a social media
               activist in the year 2011, subsequently assuming a pivotal
               role in leading the social media and IT division
-              of the 'Aam Aadmi Party' (AAP). */}
+              of the 'Aam Aadmi Party' (AAP).
             </p>
             <p className="leading-relaxed text-slate-700 mt-3 mb-4 dark:text-slate-400">
               He embarked on his professional journey as a social media
               activist in the year 2011, <br/>
               subsequently assuming a pivotal
               role in <br/> leading the social media and IT division
-              of the 'Aam Aadmi Party' (AAP).
+              of the &#39;Aam Aadmi Party&#39; &#40;AAP&#41;.
             </p>
             <SocialButton/> <br />
             <Link
@@ -205,8 +212,10 @@ export const Home = () => {
               </svg>
             </Link>
           </div>
-        </section>
+        </section> */}
       <PrevWork/>
+      <Support/>
+      <Contact/>
        </div>
     </>
   )

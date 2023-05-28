@@ -1,14 +1,24 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+
 const Header = () => {
+  const navigator = useNavigate();
+  // Show hide nav bar
+    const[navbarOpen, setNavbarOpen] = useState(false)
+    const toggleNav = () => {
+      setNavbarOpen(!navbarOpen)
+    }
+    const goToHome = () => {
+      navigator('/')  
+    }
+
   return (
     <div className="dark:text-slate-200">
   <header className="container mx-auto flex w-full items-center justify-between py-4 px-6">
-    <Link to="/">
-      <div className="w-full text-center text-lg font-bold sm:w-fit sm:text-left">
+      <div className="w-full text-center text-lg font-bold sm:w-fit sm:text-left cursor-pointer" onClick={goToHome}>
         <span className="text-blue-600">Ramesh </span>
         <span className="dark:text-slate-100"> Raj </span>
       </div>
-    </Link>
     <nav className="hidden bg-white text-base dark:bg-slate-900 sm:block">
       <ul className="flex items-center space-x-2">
         <li className="group relative">
@@ -20,12 +30,12 @@ const Header = () => {
           </Link>
         </li>
         <li className="group relative">
-          <Link
+          {/* <Link
             className="block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
             to="#"
           >
             Services
-          </Link>
+          </Link> */}
           {/* <ul className="invisible absolute z-30 space-y-2 rounded-lg border border-slate-50 bg-white p-4 opacity-0 shadow-xl transition-opacity delay-75 ease-in-out group-hover:visible group-hover:opacity-100 dark:border-slate-800 dark:bg-slate-900">
             <li>
               <Link
@@ -81,6 +91,7 @@ const Header = () => {
     <button
       className="block text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 sm:hidden"
       title="Open navigation menu"
+      onClick={toggleNav}
     >
       <svg
         preserveAspectRatio="xMidYMid meet"
@@ -98,15 +109,20 @@ const Header = () => {
         />
       </svg>
     </button>
-    <nav className="fixed -right-1/2 top-0 z-20 h-full w-1/2 transform overflow-y-auto bg-white py-4 text-base transition dark:bg-slate-900 sm:hidden">
+    {/* sm:hidden */}
+    {/* <div className={'md:hidden'+ (navbarOpen ? ' flex' : ' hidden')}> */}
+    {/* <nav className="fixed -right-1/2 top-0 z-20 h-full w-1/2 transform overflow-y-auto bg-white py-4 text-base transition dark:bg-slate-900"> */}
+
+    <nav className={"fixed left-0 top-0 z-20 h-full w-auto transform overflow-y-auto bg-white py-4 text-base transition dark:bg-slate-900 sm:hidden"+ (navbarOpen ? ' flex animate-fade-right' : ' hidden animate-fade-left')}>
       <ul className="flex flex-col space-y-2">
         <li className="text-right">
-          <button className="px-6 py-2 text-slate-400 hover:text-slate-900 dark:hover:text-slate-50">
+          <button className="px-6 py-2 text-slate-400 hover:text-slate-900 dark:hover:text-slate-50" onClick={toggleNav}>
             <svg
               preserveAspectRatio="xMidYMid meet"
               viewBox="0 0 24 24"
               width="1.2em"
               height="1.2em"
+              className="rotate-180"
             >
               <path
                 fill="none"
@@ -127,7 +143,7 @@ const Header = () => {
             Home
           </Link>
         </li>
-        <li className="group relative w-full overflow-x-visible text-right">
+        {/* <li className="group relative w-full overflow-x-visible text-right">
           <Link
             className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
             to="/"
@@ -160,6 +176,14 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+        </li> */}
+        <li className="group relative w-full overflow-x-visible text-right">
+          <Link
+            className="mx-4 block whitespace-nowrap px-3 py-2 text-sm font-semibold text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+            to="/memories"
+          >
+            Memories
+          </Link>
         </li>
         <li className="group relative w-full overflow-x-visible text-right">
           <Link
@@ -179,6 +203,7 @@ const Header = () => {
         </li>
       </ul>
     </nav>
+    {/* </div> */}
   </header>
 </div>
   )
