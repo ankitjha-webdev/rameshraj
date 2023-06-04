@@ -137,12 +137,13 @@ export const PrevWork = () => {
     </div>
   </div>
 </section> */}
+
 <section className="animate-fade-down container mx-auto px-8 py-28 sm:px-12 justify-center items-center">
 
   <h1 className="sm:mb-18 mb-24 w-full text-center text-4xl font-bold dark:text-slate-50 sm:mx-auto sm:w-4/5">
   Work Summary 
   </h1>
-  <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+  <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
     <div className="hover:animate-rotate-y hover:animate-once flex cursor-pointer flex-col items-center justify-start rounded-lg bg-slate-50 py-5 px-6 text-center text-slate-800 shadow-slate-200 transition hover:bg-white hover:shadow-lg hover:shadow-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:shadow-slate-700 dark:hover:shadow-slate-800">
       {/* <svg
         preserveAspectRatio="xMidYMid meet"

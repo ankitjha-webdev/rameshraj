@@ -21,8 +21,6 @@ export const Footer = () => {
           <Link
             className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
             to="/about"
-            rel="noopener noreferrer"
-            target="_blank"
           >
             About
           </Link>
@@ -31,8 +29,6 @@ export const Footer = () => {
           <Link
             className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
             to="/contact"
-            rel="noopener noreferrer"
-            target="_blank"
           >
            Contact
           </Link>
@@ -40,9 +36,7 @@ export const Footer = () => {
         <li className="pt-3">
           <Link
             className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
-            to="/gallery"
-            rel="noopener noreferrer"
-            target="_blank"
+            to="/memories"
           >
            Gallery
           </Link>

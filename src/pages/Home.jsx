@@ -4,6 +4,8 @@ import { SocialButton } from "../components/SocialButton"
 import { Contact } from "../components/Contact"
 import { Support } from "../components/Support"
 import { LatestNotify } from "../components/notification/LatestNotify"
+import { WebStory } from "../components/webstory/WebStory"
+import { Article } from "../components/article/Article"
 // import { WebStory } from "../components/stories/WebStory"
 export const Home = () => {
   return (
@@ -213,6 +215,8 @@ export const Home = () => {
             </Link>
           </div>
         </section> */}
+      <WebStory/>
+      <Article/>
       <PrevWork/>
       <Support/>
       <Contact/>

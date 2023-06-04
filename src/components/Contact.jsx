@@ -60,7 +60,7 @@ export const Contact = () => {
     }),
     onSubmit: (values) => {
       setLoading(true)
-      axios.post('http://localhost:3000/sendmail', values)
+      axios.post('https://rameshrajapi.onrender.com/sendmail', values)
       .then((response) => {
         console.log(response);
         toast.success(response.data.message)
@@ -73,40 +73,6 @@ export const Contact = () => {
           });
           }
   })
-
-//   const [inputs, setInputes] = useState({
-//     name:"",
-//     email: "",
-//     phone:"",
-//     message:""
-// })
-
-// const [errors, setErrors] = useState(null)
-
-// const handleChange = (e) => {
-//   setInputes((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-// }
-
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   try {
-//       if(inputs){
-//          axios.post(`http://localhost:3000/sendmail`, inputs).then((res) => {
-//           if(res){
-//             alert(res.data.message)
-//           }          
-//          }).catch((err) => {
-//           alert(err.response.data.message)
-//           setErrors(err.response.data.message)
-//          })
-
-//     }
-//   } catch (error) {
-//       setErrors(error)
-//   }
-
-// }
-
   return (
     <>
     <Toaster
@@ -177,7 +143,7 @@ export const Contact = () => {
             </div>
             <div className="w-full">
               <h4 className="text-dark mb-1 text-xl font-bold">Phone Number</h4>
-              <p className="leading-relaxed text-slate-700 dark:text-slate-400">&#40;+91&#41; 9852&#45;868&#45;646</p>
+              <p className="leading-relaxed text-slate-700 dark:text-slate-400">&#40;+91&#41; 9304&#45;113&#45;359</p>
             </div>
           </div>
           <div className="mb-8 flex w-full max-w-[370px]">

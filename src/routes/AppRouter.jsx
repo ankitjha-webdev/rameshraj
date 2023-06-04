@@ -3,8 +3,8 @@ import { Home } from '../pages/Home'
 import { About } from '../pages/About'
 import { Contact } from '../pages/Contact'
 import { Memories } from '../components/Memories'
-import { Notfound } from '../pages/error/notfound/notfound'
-import { Internalerror } from '../pages/error/servererror/internalerror'
+import { Internalerror } from '../pages/error/servererror/Internalerror'
+import { Notfound } from '../pages/error/notfound/Notfound'
 
 export const AppRouter = () => {
   return (
