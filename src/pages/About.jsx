@@ -1,7 +1,10 @@
 import profile from '../assets/images/profile.png'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 export const About = () => {
   return (
     <>
+      <Header/>
       <>
         <section className="container mx-auto flex flex-col items-center px-12 py-12 sm:flex-row sm:px-12">
         <div className="mb-8 w-full sm:mb-0 sm:w-1/2 sm:pl-4 md:pl-16">
@@ -140,7 +143,7 @@ export const About = () => {
     </div>
   </section> */}
       </>
-
+      <Footer/>
     </>
   )
 }
