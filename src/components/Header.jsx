@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
-const Header = () => {
+export const Header = () => {
   const navigator = useNavigate();
   // Show hide nav bar
     const[navbarOpen, setNavbarOpen] = useState(false)

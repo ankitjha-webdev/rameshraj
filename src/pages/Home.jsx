@@ -6,10 +6,14 @@ import { Support } from "../components/Support"
 import { LatestNotify } from "../components/notification/LatestNotify"
 import { WebStory } from "../components/webstory/WebStory"
 import { Article } from "../components/article/Article"
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 // import { WebStory } from "../components/stories/WebStory"
 export const Home = () => {
   return (
     <>
+    <Header/>
        <div className="max-w-7xl mx-auto">
        {/* <div style="width: 100%; position: relative; max-width: 500px;"><div style="padding-top: 166%;"><iframe src="https://story.ankitkumar.tech/ankit-story" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div> */}
       {/* <WebStory/> */}
@@ -221,6 +225,7 @@ export const Home = () => {
       <Support/>
       <Contact/>
        </div>
+       <Footer/>
     </>
   )
 }
